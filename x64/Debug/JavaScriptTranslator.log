@@ -1,0 +1,349 @@
+﻿Сборка начата 22.04.2021 14:49:06.
+Уровень детализации журнала: Normal.     1>Проект "C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\JavaScriptTranslator.vcxproj" в узле 2 (целевые объекты Rebuild).
+     1>_PrepareForClean:
+         Файл "x64\Debug\JavaScri.8e42d452.tlog\JavaScriptTranslator.lastbuildstate" удаляется.
+       InitializeBuildStatus:
+         Обращение к "x64\Debug\JavaScri.8e42d452.tlog\unsuccessfulbuild".
+       BisonTarget:
+         Process "parser.y" bison file
+         cmd.exe /D /C "C:\Users\maxim\AppData\Local\Temp\tmp952b7e04c1d14561ace8b2b1e2c4ae73.cmd"
+         
+         "C:\Users\maxim\IdeaProjects\JavaScriptTranslator\win_flex_bison\"win_bison.exe --output="parser.tab.cpp" --defines="parser.tab.h"  "parser.y"
+         parser.y:10.1-14: warning: deprecated directive: '%error-verbose', use '%define parse.error verbose' [-Wdeprecated]
+            10 | %error-verbose
+               | ^~~~~~~~~~~~~~
+               | %define parse.error verbose
+     1>parser.y : warning : 4 shift/reduce conflicts [-Wconflicts-sr]
+         parser.y: note: rerun with option '-Wcounterexamples' to generate conflict counterexamples
+     1>parser.y : warning : fix-its can be applied.  Rerun with option '--update'. [-Wother]
+       FlexTarget:
+         Process "lexer.l" flex file
+         cmd.exe /D /C "C:\Users\maxim\AppData\Local\Temp\tmpbf704374c4ce4d21bdf7cf404c4769d8.cmd"
+         "C:\Users\maxim\IdeaProjects\JavaScriptTranslator\win_flex_bison\"win_flex.exe -o "lexer.flex.cpp" --wincompat  "lexer.l"
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX86\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D _CRT_SECURE_NO_WARNINGS /D _CRT_SECURE_NO_WARNINGS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc142.pdb" /Gd /TP /FC /errorReport:prompt lexer.flex.cpp
+         lexer.flex.cpp
+     1>C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\lexer.l(61,9): warning C4778: "printf": незавершенная строка форматирования "%\n"
+     1>C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\lexer.l(89,62): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\lexer.l(137,34): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+     1>C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\lexer.l(169,32): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX86\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D _CRT_SECURE_NO_WARNINGS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc142.pdb" /Gd /TC /FC /errorReport:prompt parser.tab.c
+         parser.tab.c
+     1>C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\data_struct.h(606,10): warning C4101: dataToAppend: неиспользованная локальная переменная
+     1>C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\data_struct.h(985,10): warning C4101: rightOperandPath: неиспользованная локальная переменная
+     1>C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\data_struct.h(984,10): warning C4101: leftOperandPath: неиспользованная локальная переменная
+     1>C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\data_struct.h(1139,27): warning C4028: формальный параметр 2 отличается от объявления
+     1>C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\data_struct.h(1140,27): warning C4028: формальный параметр 3 отличается от объявления
+     1>C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\data_struct.h(1161,40): warning C4090: функция: разные квалификаторы "const"
+     1>C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\data_struct.h(1191,40): warning C4090: функция: разные квалификаторы "const"
+     1>parser.tab.c(332,24): warning C4273: malloc: несовместимое связывание dll
+       C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_malloc.h(97,15): message : см. предыдущее определение "malloc"
+     1>parser.tab.c(339,19): warning C4273: free: несовместимое связывание dll
+       C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\corecrt_malloc.h(85,14): message : см. предыдущее определение "free"
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX86\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D _CRT_SECURE_NO_WARNINGS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc142.pdb" /Gd /TP /FC /errorReport:prompt semantic.cpp
+         semantic.cpp
+     1>C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\data_struct.h(606,10): warning C4101: dataToAppend: неиспользованная локальная переменная
+     1>C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\data_struct.h(985,10): warning C4101: rightOperandPath: неиспользованная локальная переменная
+     1>C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\data_struct.h(984,10): warning C4101: leftOperandPath: неиспользованная локальная переменная
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX86\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\maxim\IdeaProjects\JavaScriptTranslator\x64\Debug\JavaScriptTranslator.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\maxim\IdeaProjects\JavaScriptTranslator\x64\Debug\JavaScriptTranslator.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\maxim\IdeaProjects\JavaScriptTranslator\x64\Debug\JavaScriptTranslator.lib" /MACHINE:X64 x64\Debug\lexer.flex.obj
+         x64\Debug\parser.tab.obj
+         x64\Debug\semantic.obj
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __report_rangecheckfailure в функции "int __cdecl yylex(void)" (?yylex@@YAHXZ).
+     1>parser.tab.obj : error LNK2001: неразрешенный внешний символ __report_rangecheckfailure.
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___acrt_iob_func в функции "void __cdecl yy_fatal_error(char const *)" (?yy_fatal_error@@YAXPEBD@Z).
+     1>parser.tab.obj : error LNK2001: неразрешенный внешний символ __imp___acrt_iob_func.
+     1>semantic.obj : error LNK2001: неразрешенный внешний символ __imp___acrt_iob_func.
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_clearerr в функции "int __cdecl yy_get_next_buffer(void)" (?yy_get_next_buffer@@YAHXZ).
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_fclose в функции main.
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_ferror в функции "int __cdecl yy_get_next_buffer(void)" (?yy_get_next_buffer@@YAHXZ).
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_fopen в функции main.
+     1>semantic.obj : error LNK2001: неразрешенный внешний символ __imp_fopen.
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_fread в функции "int __cdecl yy_get_next_buffer(void)" (?yy_get_next_buffer@@YAHXZ).
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_fwrite в функции "int __cdecl yylex(void)" (?yylex@@YAHXZ).
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_getc в функции "int __cdecl yy_get_next_buffer(void)" (?yy_get_next_buffer@@YAHXZ).
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___stdio_common_vfprintf в функции _vfprintf_l.
+     1>parser.tab.obj : error LNK2001: неразрешенный внешний символ __imp___stdio_common_vfprintf.
+     1>semantic.obj : error LNK2001: неразрешенный внешний символ __imp___stdio_common_vfprintf.
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___stdio_common_vsprintf в функции _vsnprintf_l.
+     1>parser.tab.obj : error LNK2001: неразрешенный внешний символ __imp___stdio_common_vsprintf.
+     1>semantic.obj : error LNK2001: неразрешенный внешний символ __imp___stdio_common_vsprintf.
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp__errno в функции "int __cdecl yy_get_next_buffer(void)" (?yy_get_next_buffer@@YAHXZ).
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ memset в функции "void __cdecl yyensure_buffer_stack(void)" (?yyensure_buffer_stack@@YAXXZ).
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ strcat в функции "int __cdecl yylex(void)" (?yylex@@YAHXZ).
+     1>parser.tab.obj : error LNK2001: неразрешенный внешний символ strcat.
+     1>semantic.obj : error LNK2001: неразрешенный внешний символ strcat.
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ strcpy в функции "int __cdecl yylex(void)" (?yylex@@YAHXZ).
+     1>parser.tab.obj : error LNK2001: неразрешенный внешний символ strcpy.
+     1>semantic.obj : error LNK2001: неразрешенный внешний символ strcpy.
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ strlen в функции "struct yy_buffer_state * __cdecl yy_scan_string(char const *)" (?yy_scan_string@@YAPEAUyy_buffer_state@@PEBD@Z).
+     1>semantic.obj : error LNK2001: неразрешенный внешний символ strlen.
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_strncmp в функции "char __cdecl octalToDecimal(char *)" (?octalToDecimal@@YADPEAD@Z).
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_free в функции "void __cdecl yyfree(void *)" (?yyfree@@YAXPEAX@Z).
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_malloc в функции "void * __cdecl yyalloc(unsigned __int64)" (?yyalloc@@YAPEAX_K@Z).
+     1>semantic.obj : error LNK2001: неразрешенный внешний символ __imp_malloc.
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_realloc в функции "void * __cdecl yyrealloc(void *,unsigned __int64)" (?yyrealloc@@YAPEAXPEAX_K@Z).
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_exit в функции "void __cdecl yy_fatal_error(char const *)" (?yy_fatal_error@@YAXPEBD@Z).
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_atof в функции "int __cdecl yylex(void)" (?yylex@@YAHXZ).
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_atoi в функции "char __cdecl octalToDecimal(char *)" (?octalToDecimal@@YADPEAD@Z).
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ "int __cdecl yyparse(void)" (?yyparse@@YAHXZ) в функции main.
+           Указание на символы, которые определены и могут подойти:
+             yyparse
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ pow в функции "char __cdecl octalToDecimal(char *)" (?octalToDecimal@@YADPEAD@Z).
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ _RTC_CheckStackVars в функции "int __cdecl yylex(void)" (?yylex@@YAHXZ).
+     1>parser.tab.obj : error LNK2001: неразрешенный внешний символ _RTC_CheckStackVars.
+     1>semantic.obj : error LNK2001: неразрешенный внешний символ _RTC_CheckStackVars.
+     1>lexer.flex.obj : error LNK2001: неразрешенный внешний символ _RTC_InitBase.
+     1>parser.tab.obj : error LNK2001: неразрешенный внешний символ _RTC_InitBase.
+     1>semantic.obj : error LNK2001: неразрешенный внешний символ _RTC_InitBase.
+     1>lexer.flex.obj : error LNK2001: неразрешенный внешний символ _RTC_Shutdown.
+     1>parser.tab.obj : error LNK2001: неразрешенный внешний символ _RTC_Shutdown.
+     1>semantic.obj : error LNK2001: неразрешенный внешний символ _RTC_Shutdown.
+     1>lexer.flex.obj : error LNK2001: неразрешенный внешний символ __GSHandlerCheck.
+     1>parser.tab.obj : error LNK2001: неразрешенный внешний символ __GSHandlerCheck.
+     1>semantic.obj : error LNK2001: неразрешенный внешний символ __GSHandlerCheck.
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __security_check_cookie в функции "int __cdecl yylex(void)" (?yylex@@YAHXZ).
+     1>parser.tab.obj : error LNK2001: неразрешенный внешний символ __security_check_cookie.
+     1>semantic.obj : error LNK2001: неразрешенный внешний символ __security_check_cookie.
+     1>lexer.flex.obj : error LNK2001: неразрешенный внешний символ "union YYSTYPE yylval" (?yylval@@3TYYSTYPE@@A).
+           Указание на символы, которые определены и могут подойти:
+             yylval
+     1>lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __security_cookie в функции "int __cdecl yylex(void)" (?yylex@@YAHXZ).
+     1>parser.tab.obj : error LNK2001: неразрешенный внешний символ __security_cookie.
+     1>semantic.obj : error LNK2001: неразрешенный внешний символ __security_cookie.
+     1>lexer.flex.obj : error LNK2001: неразрешенный внешний символ _fltused.
+     1>parser.tab.obj : error LNK2001: неразрешенный внешний символ _fltused.
+     1>semantic.obj : error LNK2001: неразрешенный внешний символ _fltused.
+     1>parser.tab.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_fputs в функции write_binary_expr.
+     1>semantic.obj : error LNK2001: неразрешенный внешний символ __imp_fputs.
+     1>parser.tab.obj : error LNK2019: ссылка на неразрешенный внешний символ free в функции yyparse.
+     1>parser.tab.obj : error LNK2019: ссылка на неразрешенный внешний символ malloc в функции FillForStmt.
+     1>parser.tab.obj : error LNK2019: ссылка на неразрешенный внешний символ yylex в функции yyparse.
+           Указание на символы, которые определены и могут подойти:
+             "int __cdecl yylex(void)" (?yylex@@YAHXZ)
+     1>parser.tab.obj : error LNK2019: ссылка на неразрешенный внешний символ decorate_AST в функции write_tree.
+           Указание на символы, которые определены и могут подойти:
+             "void __cdecl decorate_AST(struct stmt_list_struct *)" (?decorate_AST@@YAXPEAUstmt_list_struct@@@Z)
+     1>parser.tab.obj : error LNK2019: ссылка на неразрешенный внешний символ __chkstk в функции yyparse.
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "void * __cdecl operator new(unsigned __int64)" (??2@YAPEAX_K@Z) в функции "void __cdecl `dynamic initializer for 'constTable''(void)" (??__EconstTable@@YAXXZ).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "void __cdecl operator delete(void *,unsigned __int64)" (??3@YAXPEAX_K@Z) в функции "void __cdecl std::_Deallocate<16,0>(void *,unsigned __int64)" (??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ atexit в функции "void __cdecl `dynamic initializer for 'varTable''(void)" (??__EvarTable@@YAXXZ).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp__invalid_parameter в функции "void * __cdecl std::_Allocate_manually_vector_aligned<struct std::_Default_allocate_traits>(unsigned __int64)" (??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPEAX_K@Z).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp__CrtDbgReport в функции "void * __cdecl std::_Allocate_manually_vector_aligned<struct std::_Default_allocate_traits>(unsigned __int64)" (??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPEAX_K@Z).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: __cdecl std::_Lockit::_Lockit(int)" (__imp_??0_Lockit@std@@QEAA@H@Z) в функции "public: __cdecl std::_Iterator_base12::~_Iterator_base12(void)" (??1_Iterator_base12@std@@QEAA@XZ).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: __cdecl std::_Lockit::~_Lockit(void)" (__imp_??1_Lockit@std@@QEAA@XZ) в функции "public: __cdecl std::_Iterator_base12::~_Iterator_base12(void)" (??1_Iterator_base12@std@@QEAA@XZ).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ memcmp в функции "public: static int __cdecl std::_Narrow_char_traits<char,int>::compare(char const * const,char const * const,unsigned __int64)" (?compare@?$_Narrow_char_traits@DH@std@@SAHQEBD0_K@Z).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ memcpy в функции "private: void __cdecl std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Memcpy_val_from(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?_Memcpy_val_from@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXAEBV12@@Z).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ memmove в функции "public: static char * __cdecl std::_Char_traits<char,int>::move(char * const,char const * const,unsigned __int64)" (?move@?$_Char_traits@DH@std@@SAPEADQEADQEBD_K@Z).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "void __cdecl std::_Xlength_error(char const *)" (?_Xlength_error@std@@YAXPEBD@Z) в функции "void __cdecl std::_Throw_tree_length_error(void)" (?_Throw_tree_length_error@std@@YAXXZ).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "bool __cdecl std::uncaught_exception(void)" (?uncaught_exception@std@@YA_NXZ) в функции "public: __cdecl std::basic_ostream<char,struct std::char_traits<char> >::sentry::~sentry(void)" (??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ __std_exception_copy в функции "public: __cdecl std::exception::exception(class std::exception const &)" (??0exception@std@@QEAA@AEBV01@@Z).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ __std_exception_destroy в функции "public: virtual __cdecl std::exception::~exception(void)" (??1exception@std@@UEAA@XZ).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: bool __cdecl std::ios_base::good(void)const " (__imp_?good@ios_base@std@@QEBA_NXZ) в функции "public: __cdecl std::basic_ostream<char,struct std::char_traits<char> >::sentry::sentry(class std::basic_ostream<char,struct std::char_traits<char> > &)" (??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: int __cdecl std::ios_base::flags(void)const " (__imp_?flags@ios_base@std@@QEBAHXZ) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::operator<<<struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &,char const *)" (??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: __int64 __cdecl std::ios_base::width(void)const " (__imp_?width@ios_base@std@@QEBA_JXZ) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::operator<<<struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &,char const *)" (??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: __int64 __cdecl std::ios_base::width(__int64)" (__imp_?width@ios_base@std@@QEAA_J_J@Z) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::operator<<<struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &,char const *)" (??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: int __cdecl std::basic_streambuf<char,struct std::char_traits<char> >::sputc(char)" (__imp_?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::operator<<<struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &,char const *)" (??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: __int64 __cdecl std::basic_streambuf<char,struct std::char_traits<char> >::sputn(char const *,__int64)" (__imp_?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::operator<<<struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &,char const *)" (??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl std::basic_ios<char,struct std::char_traits<char> >::setstate(int,bool)" (__imp_?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::operator<<<struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &,char const *)" (??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: class std::basic_ostream<char,struct std::char_traits<char> > * __cdecl std::basic_ios<char,struct std::char_traits<char> >::tie(void)const " (__imp_?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ) в функции "public: __cdecl std::basic_ostream<char,struct std::char_traits<char> >::sentry::sentry(class std::basic_ostream<char,struct std::char_traits<char> > &)" (??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: class std::basic_streambuf<char,struct std::char_traits<char> > * __cdecl std::basic_ios<char,struct std::char_traits<char> >::rdbuf(void)const " (__imp_?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::operator<<<struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &,char const *)" (??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: char __cdecl std::basic_ios<char,struct std::char_traits<char> >::fill(void)const " (__imp_?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADXZ) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::operator<<<struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &,char const *)" (??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: char __cdecl std::basic_ios<char,struct std::char_traits<char> >::widen(char)const " (__imp_?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADD@Z) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::endl<char,struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &)" (??$endl@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@@Z).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl std::basic_ostream<char,struct std::char_traits<char> >::_Osfx(void)" (__imp_?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ) в функции "public: __cdecl std::basic_ostream<char,struct std::char_traits<char> >::sentry::~sentry(void)" (??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::basic_ostream<char,struct std::char_traits<char> >::operator<<(class std::basic_ostream<char,struct std::char_traits<char> > & (__cdecl*)(class std::basic_ostream<char,struct std::char_traits<char> > &))" (__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z) в функции "void __cdecl printTable(void)" (?printTable@@YAXXZ).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::basic_ostream<char,struct std::char_traits<char> >::operator<<(int)" (__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z) в функции "void __cdecl printTable(void)" (?printTable@@YAXXZ).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::basic_ostream<char,struct std::char_traits<char> >::put(char)" (__imp_?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@D@Z) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::endl<char,struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &)" (??$endl@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@@Z).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::basic_ostream<char,struct std::char_traits<char> >::flush(void)" (__imp_?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::endl<char,struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &)" (??$endl@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@@Z).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "void __cdecl createLabel(int,char const *,char const *)" (?createLabel@@YAXHPEBD0@Z) в функции "void __cdecl write_binary_expr(struct expr_struct *,char const *,char const *,struct _iobuf *)" (?write_binary_expr@@YAXPEAUexpr_struct@@PEBD1PEAU_iobuf@@@Z).
+           Указание на символы, которые определены и могут подойти:
+             "void __cdecl createLabel(int,char *,char *)" (?createLabel@@YAXHPEAD0@Z)
+             createLabel
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ _CxxThrowException в функции "void __cdecl std::_Throw_bad_array_new_length(void)" (?_Throw_bad_array_new_length@std@@YAXXZ).
+     1>semantic.obj : error LNK2001: неразрешенный внешний символ __CxxFrameHandler4.
+     1>semantic.obj : error LNK2001: неразрешенный внешний символ __GSHandlerCheck_EH4.
+     1>semantic.obj : error LNK2001: неразрешенный внешний символ "const type_info::`vftable'" (??_7type_info@@6B@).
+     1>semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) class std::basic_ostream<char,struct std::char_traits<char> > std::cout" (__imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A) в функции "void __cdecl printTable(void)" (?printTable@@YAXXZ).
+     1>LINK : error LNK2001: неразрешенный внешний символ mainCRTStartup.
+     1>C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\kernel32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+     1>C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\user32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+     1>C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\gdi32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+     1>C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\winspool.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+     1>C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\comdlg32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+     1>C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\advapi32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+     1>C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\shell32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+     1>C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\ole32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+     1>C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\oleaut32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+     1>C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\uuid.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+     1>C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\odbc32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+     1>C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\odbccp32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+     1>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\lib\x86\MSVCRTD.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+     1>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\lib\x86\msvcprtd.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+     1>C:\Users\maxim\IdeaProjects\JavaScriptTranslator\x64\Debug\JavaScriptTranslator.exe : fatal error LNK1120: неразрешенных внешних элементов: 76
+     1>Сборка проекта "C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\JavaScriptTranslator.vcxproj" завершена (целевые объекты Rebuild) с ошибкой.
+
+Ошибка сборки.
+
+       "C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\JavaScriptTranslator.vcxproj" (целевой объект Rebuild ) (1) ->
+       (Целевой объект BisonTarget) -> 
+         parser.y : warning : 4 shift/reduce conflicts [-Wconflicts-sr]
+         parser.y : warning : fix-its can be applied.  Rerun with option '--update'. [-Wother]
+
+
+       "C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\JavaScriptTranslator.vcxproj" (целевой объект Rebuild ) (1) ->
+       (Целевой объект ClCompile) -> 
+         C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\lexer.l(61,9): warning C4778: "printf": незавершенная строка форматирования "%\n"
+         C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\lexer.l(89,62): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+         C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\lexer.l(137,34): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+         C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\lexer.l(169,32): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+
+
+       "C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\JavaScriptTranslator.vcxproj" (целевой объект Rebuild ) (1) ->
+         C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\data_struct.h(606,10): warning C4101: dataToAppend: неиспользованная локальная переменная
+         C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\data_struct.h(985,10): warning C4101: rightOperandPath: неиспользованная локальная переменная
+         C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\data_struct.h(984,10): warning C4101: leftOperandPath: неиспользованная локальная переменная
+         C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\data_struct.h(1139,27): warning C4028: формальный параметр 2 отличается от объявления
+         C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\data_struct.h(1140,27): warning C4028: формальный параметр 3 отличается от объявления
+         C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\data_struct.h(1161,40): warning C4090: функция: разные квалификаторы "const"
+         C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\data_struct.h(1191,40): warning C4090: функция: разные квалификаторы "const"
+         parser.tab.c(332,24): warning C4273: malloc: несовместимое связывание dll
+         parser.tab.c(339,19): warning C4273: free: несовместимое связывание dll
+
+
+       "C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\JavaScriptTranslator.vcxproj" (целевой объект Rebuild ) (1) ->
+         C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\data_struct.h(606,10): warning C4101: dataToAppend: неиспользованная локальная переменная
+         C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\data_struct.h(985,10): warning C4101: rightOperandPath: неиспользованная локальная переменная
+         C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\data_struct.h(984,10): warning C4101: leftOperandPath: неиспользованная локальная переменная
+
+
+       "C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\JavaScriptTranslator.vcxproj" (целевой объект Rebuild ) (1) ->
+       (Целевой объект Link) -> 
+         C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\kernel32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+         C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\user32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+         C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\gdi32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+         C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\winspool.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+         C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\comdlg32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+         C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\advapi32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+         C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\shell32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+         C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\ole32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+         C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\oleaut32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+         C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\uuid.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+         C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\odbc32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+         C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x86\odbccp32.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\lib\x86\MSVCRTD.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\lib\x86\msvcprtd.lib : warning LNK4272: тип компьютера библиотеки "x86" конфликтует с типом целевого компьютера "x64"
+
+
+       "C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\JavaScriptTranslator.vcxproj" (целевой объект Rebuild ) (1) ->
+       (Целевой объект Link) -> 
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __report_rangecheckfailure в функции "int __cdecl yylex(void)" (?yylex@@YAHXZ).
+         parser.tab.obj : error LNK2001: неразрешенный внешний символ __report_rangecheckfailure.
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___acrt_iob_func в функции "void __cdecl yy_fatal_error(char const *)" (?yy_fatal_error@@YAXPEBD@Z).
+         parser.tab.obj : error LNK2001: неразрешенный внешний символ __imp___acrt_iob_func.
+         semantic.obj : error LNK2001: неразрешенный внешний символ __imp___acrt_iob_func.
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_clearerr в функции "int __cdecl yy_get_next_buffer(void)" (?yy_get_next_buffer@@YAHXZ).
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_fclose в функции main.
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_ferror в функции "int __cdecl yy_get_next_buffer(void)" (?yy_get_next_buffer@@YAHXZ).
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_fopen в функции main.
+         semantic.obj : error LNK2001: неразрешенный внешний символ __imp_fopen.
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_fread в функции "int __cdecl yy_get_next_buffer(void)" (?yy_get_next_buffer@@YAHXZ).
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_fwrite в функции "int __cdecl yylex(void)" (?yylex@@YAHXZ).
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_getc в функции "int __cdecl yy_get_next_buffer(void)" (?yy_get_next_buffer@@YAHXZ).
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___stdio_common_vfprintf в функции _vfprintf_l.
+         parser.tab.obj : error LNK2001: неразрешенный внешний символ __imp___stdio_common_vfprintf.
+         semantic.obj : error LNK2001: неразрешенный внешний символ __imp___stdio_common_vfprintf.
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp___stdio_common_vsprintf в функции _vsnprintf_l.
+         parser.tab.obj : error LNK2001: неразрешенный внешний символ __imp___stdio_common_vsprintf.
+         semantic.obj : error LNK2001: неразрешенный внешний символ __imp___stdio_common_vsprintf.
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp__errno в функции "int __cdecl yy_get_next_buffer(void)" (?yy_get_next_buffer@@YAHXZ).
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ memset в функции "void __cdecl yyensure_buffer_stack(void)" (?yyensure_buffer_stack@@YAXXZ).
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ strcat в функции "int __cdecl yylex(void)" (?yylex@@YAHXZ).
+         parser.tab.obj : error LNK2001: неразрешенный внешний символ strcat.
+         semantic.obj : error LNK2001: неразрешенный внешний символ strcat.
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ strcpy в функции "int __cdecl yylex(void)" (?yylex@@YAHXZ).
+         parser.tab.obj : error LNK2001: неразрешенный внешний символ strcpy.
+         semantic.obj : error LNK2001: неразрешенный внешний символ strcpy.
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ strlen в функции "struct yy_buffer_state * __cdecl yy_scan_string(char const *)" (?yy_scan_string@@YAPEAUyy_buffer_state@@PEBD@Z).
+         semantic.obj : error LNK2001: неразрешенный внешний символ strlen.
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_strncmp в функции "char __cdecl octalToDecimal(char *)" (?octalToDecimal@@YADPEAD@Z).
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_free в функции "void __cdecl yyfree(void *)" (?yyfree@@YAXPEAX@Z).
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_malloc в функции "void * __cdecl yyalloc(unsigned __int64)" (?yyalloc@@YAPEAX_K@Z).
+         semantic.obj : error LNK2001: неразрешенный внешний символ __imp_malloc.
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_realloc в функции "void * __cdecl yyrealloc(void *,unsigned __int64)" (?yyrealloc@@YAPEAXPEAX_K@Z).
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_exit в функции "void __cdecl yy_fatal_error(char const *)" (?yy_fatal_error@@YAXPEBD@Z).
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_atof в функции "int __cdecl yylex(void)" (?yylex@@YAHXZ).
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_atoi в функции "char __cdecl octalToDecimal(char *)" (?octalToDecimal@@YADPEAD@Z).
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ "int __cdecl yyparse(void)" (?yyparse@@YAHXZ) в функции main.
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ pow в функции "char __cdecl octalToDecimal(char *)" (?octalToDecimal@@YADPEAD@Z).
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ _RTC_CheckStackVars в функции "int __cdecl yylex(void)" (?yylex@@YAHXZ).
+         parser.tab.obj : error LNK2001: неразрешенный внешний символ _RTC_CheckStackVars.
+         semantic.obj : error LNK2001: неразрешенный внешний символ _RTC_CheckStackVars.
+         lexer.flex.obj : error LNK2001: неразрешенный внешний символ _RTC_InitBase.
+         parser.tab.obj : error LNK2001: неразрешенный внешний символ _RTC_InitBase.
+         semantic.obj : error LNK2001: неразрешенный внешний символ _RTC_InitBase.
+         lexer.flex.obj : error LNK2001: неразрешенный внешний символ _RTC_Shutdown.
+         parser.tab.obj : error LNK2001: неразрешенный внешний символ _RTC_Shutdown.
+         semantic.obj : error LNK2001: неразрешенный внешний символ _RTC_Shutdown.
+         lexer.flex.obj : error LNK2001: неразрешенный внешний символ __GSHandlerCheck.
+         parser.tab.obj : error LNK2001: неразрешенный внешний символ __GSHandlerCheck.
+         semantic.obj : error LNK2001: неразрешенный внешний символ __GSHandlerCheck.
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __security_check_cookie в функции "int __cdecl yylex(void)" (?yylex@@YAHXZ).
+         parser.tab.obj : error LNK2001: неразрешенный внешний символ __security_check_cookie.
+         semantic.obj : error LNK2001: неразрешенный внешний символ __security_check_cookie.
+         lexer.flex.obj : error LNK2001: неразрешенный внешний символ "union YYSTYPE yylval" (?yylval@@3TYYSTYPE@@A).
+         lexer.flex.obj : error LNK2019: ссылка на неразрешенный внешний символ __security_cookie в функции "int __cdecl yylex(void)" (?yylex@@YAHXZ).
+         parser.tab.obj : error LNK2001: неразрешенный внешний символ __security_cookie.
+         semantic.obj : error LNK2001: неразрешенный внешний символ __security_cookie.
+         lexer.flex.obj : error LNK2001: неразрешенный внешний символ _fltused.
+         parser.tab.obj : error LNK2001: неразрешенный внешний символ _fltused.
+         semantic.obj : error LNK2001: неразрешенный внешний символ _fltused.
+         parser.tab.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_fputs в функции write_binary_expr.
+         semantic.obj : error LNK2001: неразрешенный внешний символ __imp_fputs.
+         parser.tab.obj : error LNK2019: ссылка на неразрешенный внешний символ free в функции yyparse.
+         parser.tab.obj : error LNK2019: ссылка на неразрешенный внешний символ malloc в функции FillForStmt.
+         parser.tab.obj : error LNK2019: ссылка на неразрешенный внешний символ yylex в функции yyparse.
+         parser.tab.obj : error LNK2019: ссылка на неразрешенный внешний символ decorate_AST в функции write_tree.
+         parser.tab.obj : error LNK2019: ссылка на неразрешенный внешний символ __chkstk в функции yyparse.
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "void * __cdecl operator new(unsigned __int64)" (??2@YAPEAX_K@Z) в функции "void __cdecl `dynamic initializer for 'constTable''(void)" (??__EconstTable@@YAXXZ).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "void __cdecl operator delete(void *,unsigned __int64)" (??3@YAXPEAX_K@Z) в функции "void __cdecl std::_Deallocate<16,0>(void *,unsigned __int64)" (??$_Deallocate@$0BA@$0A@@std@@YAXPEAX_K@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ atexit в функции "void __cdecl `dynamic initializer for 'varTable''(void)" (??__EvarTable@@YAXXZ).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp__invalid_parameter в функции "void * __cdecl std::_Allocate_manually_vector_aligned<struct std::_Default_allocate_traits>(unsigned __int64)" (??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPEAX_K@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp__CrtDbgReport в функции "void * __cdecl std::_Allocate_manually_vector_aligned<struct std::_Default_allocate_traits>(unsigned __int64)" (??$_Allocate_manually_vector_aligned@U_Default_allocate_traits@std@@@std@@YAPEAX_K@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: __cdecl std::_Lockit::_Lockit(int)" (__imp_??0_Lockit@std@@QEAA@H@Z) в функции "public: __cdecl std::_Iterator_base12::~_Iterator_base12(void)" (??1_Iterator_base12@std@@QEAA@XZ).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: __cdecl std::_Lockit::~_Lockit(void)" (__imp_??1_Lockit@std@@QEAA@XZ) в функции "public: __cdecl std::_Iterator_base12::~_Iterator_base12(void)" (??1_Iterator_base12@std@@QEAA@XZ).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ memcmp в функции "public: static int __cdecl std::_Narrow_char_traits<char,int>::compare(char const * const,char const * const,unsigned __int64)" (?compare@?$_Narrow_char_traits@DH@std@@SAHQEBD0_K@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ memcpy в функции "private: void __cdecl std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Memcpy_val_from(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?_Memcpy_val_from@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAAXAEBV12@@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ memmove в функции "public: static char * __cdecl std::_Char_traits<char,int>::move(char * const,char const * const,unsigned __int64)" (?move@?$_Char_traits@DH@std@@SAPEADQEADQEBD_K@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "void __cdecl std::_Xlength_error(char const *)" (?_Xlength_error@std@@YAXPEBD@Z) в функции "void __cdecl std::_Throw_tree_length_error(void)" (?_Throw_tree_length_error@std@@YAXXZ).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "bool __cdecl std::uncaught_exception(void)" (?uncaught_exception@std@@YA_NXZ) в функции "public: __cdecl std::basic_ostream<char,struct std::char_traits<char> >::sentry::~sentry(void)" (??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ __std_exception_copy в функции "public: __cdecl std::exception::exception(class std::exception const &)" (??0exception@std@@QEAA@AEBV01@@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ __std_exception_destroy в функции "public: virtual __cdecl std::exception::~exception(void)" (??1exception@std@@UEAA@XZ).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: bool __cdecl std::ios_base::good(void)const " (__imp_?good@ios_base@std@@QEBA_NXZ) в функции "public: __cdecl std::basic_ostream<char,struct std::char_traits<char> >::sentry::sentry(class std::basic_ostream<char,struct std::char_traits<char> > &)" (??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: int __cdecl std::ios_base::flags(void)const " (__imp_?flags@ios_base@std@@QEBAHXZ) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::operator<<<struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &,char const *)" (??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: __int64 __cdecl std::ios_base::width(void)const " (__imp_?width@ios_base@std@@QEBA_JXZ) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::operator<<<struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &,char const *)" (??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: __int64 __cdecl std::ios_base::width(__int64)" (__imp_?width@ios_base@std@@QEAA_J_J@Z) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::operator<<<struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &,char const *)" (??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: int __cdecl std::basic_streambuf<char,struct std::char_traits<char> >::sputc(char)" (__imp_?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::operator<<<struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &,char const *)" (??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: __int64 __cdecl std::basic_streambuf<char,struct std::char_traits<char> >::sputn(char const *,__int64)" (__imp_?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::operator<<<struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &,char const *)" (??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl std::basic_ios<char,struct std::char_traits<char> >::setstate(int,bool)" (__imp_?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::operator<<<struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &,char const *)" (??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: class std::basic_ostream<char,struct std::char_traits<char> > * __cdecl std::basic_ios<char,struct std::char_traits<char> >::tie(void)const " (__imp_?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ) в функции "public: __cdecl std::basic_ostream<char,struct std::char_traits<char> >::sentry::sentry(class std::basic_ostream<char,struct std::char_traits<char> > &)" (??0sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@AEAV12@@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: class std::basic_streambuf<char,struct std::char_traits<char> > * __cdecl std::basic_ios<char,struct std::char_traits<char> >::rdbuf(void)const " (__imp_?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::operator<<<struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &,char const *)" (??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: char __cdecl std::basic_ios<char,struct std::char_traits<char> >::fill(void)const " (__imp_?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADXZ) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::operator<<<struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &,char const *)" (??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: char __cdecl std::basic_ios<char,struct std::char_traits<char> >::widen(char)const " (__imp_?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADD@Z) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::endl<char,struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &)" (??$endl@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: void __cdecl std::basic_ostream<char,struct std::char_traits<char> >::_Osfx(void)" (__imp_?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ) в функции "public: __cdecl std::basic_ostream<char,struct std::char_traits<char> >::sentry::~sentry(void)" (??1sentry@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::basic_ostream<char,struct std::char_traits<char> >::operator<<(class std::basic_ostream<char,struct std::char_traits<char> > & (__cdecl*)(class std::basic_ostream<char,struct std::char_traits<char> > &))" (__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z) в функции "void __cdecl printTable(void)" (?printTable@@YAXXZ).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::basic_ostream<char,struct std::char_traits<char> >::operator<<(int)" (__imp_??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z) в функции "void __cdecl printTable(void)" (?printTable@@YAXXZ).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::basic_ostream<char,struct std::char_traits<char> >::put(char)" (__imp_?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@D@Z) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::endl<char,struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &)" (??$endl@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) public: class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::basic_ostream<char,struct std::char_traits<char> >::flush(void)" (__imp_?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ) в функции "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::endl<char,struct std::char_traits<char> >(class std::basic_ostream<char,struct std::char_traits<char> > &)" (??$endl@DU?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "void __cdecl createLabel(int,char const *,char const *)" (?createLabel@@YAXHPEBD0@Z) в функции "void __cdecl write_binary_expr(struct expr_struct *,char const *,char const *,struct _iobuf *)" (?write_binary_expr@@YAXPEAUexpr_struct@@PEBD1PEAU_iobuf@@@Z).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ _CxxThrowException в функции "void __cdecl std::_Throw_bad_array_new_length(void)" (?_Throw_bad_array_new_length@std@@YAXXZ).
+         semantic.obj : error LNK2001: неразрешенный внешний символ __CxxFrameHandler4.
+         semantic.obj : error LNK2001: неразрешенный внешний символ __GSHandlerCheck_EH4.
+         semantic.obj : error LNK2001: неразрешенный внешний символ "const type_info::`vftable'" (??_7type_info@@6B@).
+         semantic.obj : error LNK2019: ссылка на неразрешенный внешний символ "__declspec(dllimport) class std::basic_ostream<char,struct std::char_traits<char> > std::cout" (__imp_?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A) в функции "void __cdecl printTable(void)" (?printTable@@YAXXZ).
+         LINK : error LNK2001: неразрешенный внешний символ mainCRTStartup.
+         C:\Users\maxim\IdeaProjects\JavaScriptTranslator\x64\Debug\JavaScriptTranslator.exe : fatal error LNK1120: неразрешенных внешних элементов: 76
+
+    Предупреждений: 32
+    Ошибок: 106
+
+Прошло времени 00:00:04.28

@@ -1,0 +1,5 @@
+^parser.y
+C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\parser.tab.cpp
+C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\parser.tab.h
+^lexer.l
+C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\lexer.flex.cpp

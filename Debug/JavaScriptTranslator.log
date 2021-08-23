@@ -1,0 +1,60 @@
+﻿Сборка начата 18.05.2021 19:16:40.
+Уровень детализации журнала: Normal.     1>Проект "C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\JavaScriptTranslator.vcxproj" в узле 2 (целевые объекты Rebuild).
+     1>_PrepareForClean:
+         Файл "Debug\JavaScri.8e42d452.tlog\JavaScriptTranslator.lastbuildstate" удаляется.
+       InitializeBuildStatus:
+         Создание "Debug\JavaScri.8e42d452.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+       BisonTarget:
+         Process "parser.y" bison file
+         cmd.exe /D /C "C:\Users\maxim\AppData\Local\Temp\tmpd564e9db3c7e45929572d8a9c35bd373.cmd"
+         
+         "C:\Users\maxim\IdeaProjects\JavaScriptTranslator\win_flex_bison\"win_bison.exe --output="parser.tab.cpp" --defines="parser.tab.h" --verbose  "parser.y"
+         parser.y:12.1-14: warning: deprecated directive: '%error-verbose', use '%define parse.error verbose' [-Wdeprecated]
+            12 | %error-verbose
+               | ^~~~~~~~~~~~~~
+               | %define parse.error verbose
+     1>parser.y : warning : 4 shift/reduce conflicts [-Wconflicts-sr]
+         parser.y: note: rerun with option '-Wcounterexamples' to generate conflict counterexamples
+     1>parser.y : warning : fix-its can be applied.  Rerun with option '--update'. [-Wother]
+       FlexTarget:
+       Целевой объект "FlexTarget" пропускается, так как все выходные файлы актуальны по отношению к входным.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D _CRT_SECURE_NO_WARNINGS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt tree.cpp parser.tab.cpp print_tree.cpp
+         tree.cpp
+         parser.tab.cpp
+         print_tree.cpp
+         Создание кода...
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D _CRT_SECURE_NO_WARNINGS /D _CRT_SECURE_NO_WARNINGS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt lexer.flex.cpp
+         lexer.flex.cpp
+     1>C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\lexer.l(55,9): warning C4778: "printf": незавершенная строка форматирования "%\n"
+     1>C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\lexer.l(91,22): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+     1>C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\lexer.l(166,26): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\maxim\IdeaProjects\JavaScriptTranslator\Debug\JavaScriptTranslator.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\maxim\IdeaProjects\JavaScriptTranslator\Debug\JavaScriptTranslator.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\maxim\IdeaProjects\JavaScriptTranslator\Debug\JavaScriptTranslator.lib" /MACHINE:X86 Debug\tree.obj
+         Debug\lexer.flex.obj
+         Debug\parser.tab.obj
+         Debug\print_tree.obj
+         JavaScriptTranslator.vcxproj -> C:\Users\maxim\IdeaProjects\JavaScriptTranslator\Debug\JavaScriptTranslator.exe
+       FinalizeBuildStatus:
+         Файл "Debug\JavaScri.8e42d452.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "Debug\JavaScri.8e42d452.tlog\JavaScriptTranslator.lastbuildstate".
+     1>Сборка проекта "C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\JavaScriptTranslator.vcxproj" завершена (целевые объекты Rebuild).
+
+Сборка успешно завершена.
+
+       "C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\JavaScriptTranslator.vcxproj" (целевой объект Rebuild ) (1) ->
+       (Целевой объект BisonTarget) -> 
+         parser.y : warning : 4 shift/reduce conflicts [-Wconflicts-sr]
+         parser.y : warning : fix-its can be applied.  Rerun with option '--update'. [-Wother]
+
+
+       "C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\JavaScriptTranslator.vcxproj" (целевой объект Rebuild ) (1) ->
+       (Целевой объект ClCompile) -> 
+         C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\lexer.l(55,9): warning C4778: "printf": незавершенная строка форматирования "%\n"
+         C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\lexer.l(91,22): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+         C:\Users\maxim\IdeaProjects\JavaScriptTranslator\JavaScriptTranslator\lexer.l(166,26): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+
+    Предупреждений: 5
+    Ошибок: 0
+
+Прошло времени 00:00:05.01

@@ -1,0 +1,92 @@
+if (a>b) a=a+b; else if (a>c) a=a*c; else if (a>c) a=a*c; else if (a>c) a=a*c; else if (a>c) a=a*c; else a=a+b*c;
+if (a>b) a=a+b; else if (a>c) a=a*c; 
+if (a>b) a=a+b; else a=a-b; 
+if (a>b) a=a+b;
+a[0]=10;
+array = [1,2,3,4];
+
+for(element of array){
+	element = element+1;
+	b = element+3;
+	c = b+4;
+	d = c+5;
+}
+input (a=a+b);
+output ("Hello World");
+
+for(i=0; i<10; i=i+1){
+	a[i]=i+1;
+	b = a+3;
+	c = b+4;
+	d = c+5;
+}
+if (a>b) {a=a+b;
+	a=a+10;
+	a=a+30;
+	a=a+56;
+}else
+{
+	a=a+10;
+	a=a+30;
+	a=a+56;
+}
+var expr = 'Corgee';
+switch (expr){ 
+case 'UchiIno':
+	a=a+1; 
+	break;
+case 'Bulldog':
+	b=b/a;
+	a=a+5;
+	a=a+1; 
+	break;
+default:
+	b=b/a;
+	a=a+5;
+	a="Hello"; 
+}
+a=a+5;
+{a=a+5;
+b=b-6;
+c=d%5;
+}a=a+5;
+{a=a+5;
+b=b-6;
+c=d%5;
+}
+{
+	s='single'
+	dd="double"
+	z = 10
+	y = 10.011
+	a = b+c
+	d = b-c	
+	e = b*c;
+}
+f = b/c;
+d = a%c;
+a ==b
+a===b;
+!a;
+(a=a+b+c)
+a=a+2;
+do{
+a[bar(y,z)]=i+foo()*1;
+}while (i < 3);
+while (n < 3){
+n=n+1;
+n=n+3;
+}
+var b;
+var a=c+b;
+
+function foo() 
+{
+a + b;
+if (a) 
+c + d;
+}
+function bar(a,b)
+{
+foo(b, d)=bar(1,2);
+}
